@@ -133,5 +133,5 @@ def test():
         print('Too many arguments!')
 
 if __name__=='__main__':
-   print testAdd(1,3)
+   print test()
 
