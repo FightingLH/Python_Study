@@ -1,0 +1,79 @@
+1.python学习，通过linux指令 .py  文件创建第一行输入特殊注释　
+  #!/usr/bin/env python 然后通过指令给　　.py以执行权限chmod a+x hello.py
+  通过　./.py执行
+
+2.python输入和输出类似其他语言
+  输出：print('hello world')
+  输入:name = input()
+
+3.转义字符　\  同时使用　r表示不转义
+
+4.True 和False表示布尔值。and与运算 or或运算 not其中not是非运算 None表示空值不是0
+
+5.变量：和其他语言一样必须是英文字母或者_或者数字组合，不可以是数字开头，并且该变量可以反复的给赋值，并且不区分
+
+6.format() 会用传入的参数替换掉{0} {1}...  内的占位符
+  s = 'hello+ {0},{1}' .format('x','y')
+
+7.list len(list) 长度 并且是一个有序的可变的序列
+  .append追加
+  .insert插入
+  .pop删除
+
+8.tuple与list的区别，tuple初始化后不可修改:一定要知道不可修改的是什么这里是说的指向不可修改，而不是说内部的内容不可修改
+
+9.条件判断:if x :
+          else if y :
+          else :
+
+10.循环. for x in list:
+            print x
+
+         while函数+break
+         while函数+continue
+
+11.range函数：例如range(10)表示0-10
+
+12.dict和set
+   dict key-value
+
+13:函数 abs函数 max函数 hex函数
+   定义函数　
+   isinstance()函数
+   函数参数
+   递归函数
+
+14:切片 如取list或tuple中多个元素
+
+15:迭代 dict.itervalues() 取value 正常迭代字典取的是key
+
+16:列表生成式 range(1,10)
+
+17:lower函数字符串变小写
+18:isinstance函数  isinsatnce(x,str)
+
+19:生成器..next  如： L = [x * x for x in range(10)]是一个列表  
+                    g = (x * x for x in range(10))是一个生成器
+  yield关键字使一个普通函数变成一个生成器
+  odd函数
+
+20:函数式编程
+   map():接收两个参数一个是函数一个是序列,函数来实现序列并且返回序列结果
+   reduce():接收两个参数一个函数一个序列，reduce把结果和序列的下一个元素累计计算
+   filter():过滤序列,接收两个参数，一个函数一个序列,把传入的函数作用在序列的每一个元素上，根据true或false来保留
+   sorted排序 本身是在-1 0 1之间进行 sorted([1,2,3,4,2,0],reversed_cmp)
+21:返回函数，函数本身作为返回值 闭包
+
+22:匿名函数list(map(lambda x: x * x, [1, 2, 3, 4, 5, 6, 7, 8, 9]))
+   lambda匿名函数，前面的x表示参数 匿名函数有个限制，就是只能有一个表达式，不用写return，返回值就是该表达式的结果
+   用匿名函数有个好处，因为函数没有名字，不必担心函数名冲突。此外，匿名函数也是一个函数对象，也可以把匿名函数赋值给一个变量，再利用变量来调用该函数：
+
+23:装饰器由于函数也是一个对象，而且函数对象可以被赋值给变量，所以，通过变量也能调用该函数。
+   __name__属性可以获取函数名
+   在代码运行期间动态增加功能的方式，称之为“装饰器”（Decorator）
+
+24:偏函数
+   functools.partial的作用就是，把一个函数的某些参数给固定住（也就是设置默认值），返回一个新的函数
+
+25:模块
+
